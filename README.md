@@ -17,9 +17,8 @@ Similarly, create another folder for running the JO generation process, such as 
 ```
 setupATLAS
 asetup 21.6.51,AthGeneration
-cd <where>/run/
-Gen_tf.py --ecmEnergy=13000. --maxEvents=20000 --firstEvent=1 --randomSeed=111 --outputEVNTFile=EVNT.root
---jobConfig=<path_joboptions> (ex: =../100012/)
+cd <where>/run/ e.g. cd <where>/run/100012
+Gen_tf.py --ecmEnergy=13000. --maxEvents=20000 --firstEvent=1 --randomSeed=111 --outputEVNTFile=EVNT.root--jobConfig=<path_joboptions>
 Gen_tf.py --ecmEnergy=13000. --maxEvents=20000 --firstEvent=1 --randomSeed=111 --outputEVNTFile=EVNT.root --jobConfig=<where>/joboption/100012/
 ```
 
