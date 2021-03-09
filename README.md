@@ -21,5 +21,11 @@ cd <where>/run/ e.g. cd <where>/run/100012
 Gen_tf.py --ecmEnergy=13000. --maxEvents=20000 --firstEvent=1 --randomSeed=111 --outputEVNTFile=EVNT.root--jobConfig=<path_joboptions>
 Gen_tf.py --ecmEnergy=13000. --maxEvents=20000 --firstEvent=1 --randomSeed=111 --outputEVNTFile=EVNT.root --jobConfig=<where>/joboption/100012/
 ```
-
-
+5. Change .root type to TruthAOD. Creat a new screen re-setup environment:
+```
+screen
+setupATLAS
+lsetup asetup
+asetup 21.2.6.0,AthDerivation
+Reco_tf.py --inputEVNTFile EVNT.root --outputDAODFile truth1.root --reductionConf TRUTH1
+```
