@@ -47,9 +47,14 @@ rcSetup Base,2.3.23
 rc find_packages
 rc compile
 ```
-9. Go into `/ntuple/100012`: Notice: Only one file which is `DAOD_TRUTH1.truth1.root` in folder.
+9. Go into `/ntuple/100012`: Notice: Only one file which is `DAOD_TRUTH1.truth1.root` in folder and the total number of event.
 ```
 cd <where>/ntuple/100012
 UserTuple 0 run . ntuple 20000
 ```
 10. Check
+
+
+
+
+
