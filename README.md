@@ -41,6 +41,15 @@ tar xf xAODDump.tgz
 ```
 cp <where>/DAOD_TRUTH1.truth1.root <where>/ntuple/100012
 ```
-9. Go to a new screen and setup environment in
-
-
+8. Go to a new screen and setup environment in ??
+```
+rcSetup Base,2.3.23
+rc find_packages
+rc compile
+```
+9. Go into `/ntuple/100012`: Notice: Only one file which is `DAOD_TRUTH1.truth1.root` in folder.
+```
+cd <where>/ntuple/100012
+UserTuple 0 run . ntuple 20000
+```
+10. Check
