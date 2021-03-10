@@ -41,7 +41,7 @@ tar xf xAODDump.tgz
 ```
 cp <where>/DAOD_TRUTH1.truth1.root <where>/ntuple/100012
 ```
-8. Go to a new screen?? and setup environment in `ntuple`:
+8. Go to a new screen?? and setup environment in `<where>/ntuple`:
 ```
 rcSetup Base,2.3.23
 rc find_packages
