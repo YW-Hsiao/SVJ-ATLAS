@@ -31,7 +31,7 @@ cd <where>/run/10001x
 Reco_tf.py --inputEVNTFile EVNT.root --outputDAODFile truth1.root --reductionConf TRUTH1
 ```
 We will get the file `DAOD_TRUTH1.truth1.root`.  
-6. Create a new folder ntuple/100012 and download xAODDump to your ntuple folder:
+6. Create a new folder `ntuple/100012` and download `xAODDump` to your `ntuple` folder:
 ```
 /afs/cern.ch/work/y/yuxu/public/Zijun/xAODDump.tgz
 /afs/cern.ch/work/y/yuxu/public/Zijun/setup_reco.sh
