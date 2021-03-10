@@ -55,8 +55,16 @@ rc compile
 cd <where>/ntuple/100012
 UserTuple 0 run . ntuple 20000
 ```
-10. Check
-
+10. We will obtain a run folder and go into `run/data-user` there is a `ntuple.root` root file. Check it out:
+```
+cd <where>/100012/run/data-user
+root -l ntuple.root
+.ls
+```
+We are going to see `tau;1`, so that we successfully done.
+```
+.q
+```
 
 
 
