@@ -16,7 +16,7 @@ Similarly, create another folder for running the JO generation process, such as 
 4. Setup environment, go into the run folder, and run MadGraph & Pythia & detector simulation:
 ```
 setupATLAS
-asetup 21.6.51,AthGeneration
+asetup 21.6.51,AthGeneration (or asetup 21.6.58,AthGeneration)??
 cd <where>/run/10001x e.g. cd <where>/run/100012
 Gen_tf.py --ecmEnergy=13000. --maxEvents=20000 --firstEvent=1 --randomSeed=111 --outputEVNTFile=EVNT.root--jobConfig=<path_joboptions>
 Gen_tf.py --ecmEnergy=13000. --maxEvents=20000 --firstEvent=1 --randomSeed=111 --outputEVNTFile=EVNT.root --jobConfig=<where>/joboption/100012/
