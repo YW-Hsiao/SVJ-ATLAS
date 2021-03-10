@@ -44,6 +44,7 @@ cp <where>/DAOD_TRUTH1.truth1.root <where>/ntuple/100012
 8. Go to a new screen?? and setup environment in `<where>/ntuple`:
 ```
 screen
+cd <where>/ntuple
 setupATLAS
 lsetup asetup
 rcSetup Base,2.3.23
