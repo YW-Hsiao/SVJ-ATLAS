@@ -17,25 +17,29 @@ Similarly, create another folder for running the JO generation process, such as 
 ```
 setupATLAS
 asetup 21.6.51,AthGeneration
-cd <where>/run/ e.g. cd <where>/run/100012
+cd <where>/run/10001x e.g. cd <where>/run/100012
 Gen_tf.py --ecmEnergy=13000. --maxEvents=20000 --firstEvent=1 --randomSeed=111 --outputEVNTFile=EVNT.root--jobConfig=<path_joboptions>
 Gen_tf.py --ecmEnergy=13000. --maxEvents=20000 --firstEvent=1 --randomSeed=111 --outputEVNTFile=EVNT.root --jobConfig=<where>/joboption/100012/
 ```
-5. Change .root type to [TruthAOD](https://twiki.cern.ch/twiki/bin/viewauth/AtlasProtected/TruthDAOD). Creat a new screen re-setup environment:
+5. Change .root type to [TruthAOD](https://twiki.cern.ch/twiki/bin/viewauth/AtlasProtected/TruthDAOD). We must creat a new screen to re-setup environment:
 ```
 screen
 setupATLAS
 lsetup asetup
 asetup 21.2.6.0,AthDerivation
+cd <where>/run/10001x
 Reco_tf.py --inputEVNTFile EVNT.root --outputDAODFile truth1.root --reductionConf TRUTH1
 ```
-6. Create a new folder ntuple/100012 (or ntuple100012) and download xAODDump to your ntuple folder:
+6. Create a new folder ntuple/100012 and download xAODDump to your ntuple folder:
 ```
 /afs/cern.ch/work/y/yuxu/public/Zijun/xAODDump.tgz
 /afs/cern.ch/work/y/yuxu/public/Zijun/setup_reco.sh
 tar xf xAODDump.tgz
 ```
-7. Go to a new screen and setup environment in
-
+7. Copy/paste into ntuple/100012 folder:
+```
+cp <where>/
+```
+9. Go to a new screen and setup environment in
 
 
