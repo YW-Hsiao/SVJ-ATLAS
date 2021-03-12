@@ -68,6 +68,10 @@ We are going to see `tau;1`, so that we successfully done.
 .q
 ```
 
-
-
-
+### Useful command
+```
+control+a+d
+screen -list
+screen -r
+ssh <yourname>@lxplusXXX.cern.ch
+```
