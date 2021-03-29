@@ -1,17 +1,17 @@
 # SVJ-ATLAS
-Abstract: This is JobOptions process.
+Abstract: This repository is about JobOptions process and Semi-Visible Jets simulations.
 
 
 ## 1. JobOptions Process
 1. Sign-in your LXPLUS
-2. And then we need a environment to work in 24 hours. Therefore, go into LXPLUS screen:  
+2. And then we need a environment to work in 24 hours. Therefore, go into LXPLUS screen:
 ```
 k5reauth -x -f pagsh
 aklog
 bash
 screen
 ```
-3. First, setup your JO.py file and put the JO.py file in a folder, such as joboptions/100012/JO1.py, joboptions/100013/JO2.py, and so on (or jo100012/JO1.py). Notice: Only one JO file in each folder.-red
+3. First, setup your JO.py file and put the JO.py file in a folder, such as joboptions/100012/JO1.py, joboptions/100013/JO2.py, and so on (or jo100012/JO1.py). &#128314; Notice: Only one JO file in each folder. &#128315;
 Similarly, create another folder for running the JO generation process, such as run/100012, run/100013, and so on (or run100012).
 4. Setup environment, go into the run folder, and run MadGraph & Pythia & detector simulation:
 ```
@@ -42,7 +42,7 @@ tar xf xAODDump.tgz
 ```
 cp <where>/DAOD_TRUTH1.truth1.root <where>/ntuple/100012
 ```
-8. Go to a new screen?? and setup environment in `<where>/ntuple`:
+8. Go to a new screen and setup environment in `<where>/ntuple`:
 ```
 screen
 cd <where>/ntuple
@@ -52,7 +52,8 @@ rcSetup Base,2.3.23
 rc find_packages
 rc compile
 ```
-9. Go into `/ntuple/100012`: Notice: Only one file which is `DAOD_TRUTH1.truth1.root` in folder and the total number of event.
+9. Go into `/ntuple/100012`:  
+&#128314; Notice: Only one file which is `DAOD_TRUTH1.truth1.root` in folder and the total number of event. &#128315;
 ```
 cd <where>/ntuple/100012
 UserTuple 0 run . ntuple 20000
@@ -75,3 +76,5 @@ screen -list
 screen -r
 ssh <yourname>@lxplusXXX.cern.ch
 ```
+
+## 2.Semi-Visible Jets Simulation
