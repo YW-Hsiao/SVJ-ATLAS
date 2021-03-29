@@ -1,0 +1,91 @@
+Main:numberOfEvents = 10000 
+Main:timesAllowErrors = 3 
+Random:seed = 1111
+Next:numberCount = 1000 
+Next:numberShowInfo = 1 
+Next:numberShowProcess = 1 
+Next:numberShowEvent = 1 
+Init:showAllSettings = on
+
+4900001:m0 = 50000 
+4900002:m0 = 50000 
+4900003:m0 = 50000 
+4900004:m0 = 50000 
+4900005:m0 = 50000 
+4900006:m0 = 50000 
+4900011:m0 = 50000 
+4900012:m0 = 50000 
+4900013:m0 = 50000 
+4900014:m0 = 50000 
+4900015:m0 = 50000 
+4900016:m0 = 50000 
+
+HiddenValley:Ngauge = 2 
+HiddenValley:Lambda = 1
+HiddenValley:alphaFSR = 1
+HiddenValley:spinFv = 0 
+HiddenValley:FSR = on 
+HiddenValley:fragment = on 
+HiddenValley:pTminFSR = 1.1
+HiddenValley:probVector = 0.75
+
+4900101:m0 = 10.0
+4900101:mWidth = 0.2
+4900101:mMin = 9.8
+4900101:mMax = 10.2
+4900111:m0 = 20
+4900113:m0 = 20
+51:m0 = 9.99
+53:m0 = 9.99
+
+4900111:onechannel = 1 0.6 91 -3 3 
+4900111:addchannel = 1 0.4 0 51 -51 
+
+4900113:onechannel = 1 0.12 91 -1 1 
+4900113:addchannel = 1 0.12 91 -2 2 
+4900113:addchannel = 1 0.12 91 -3 3 
+4900113:addchannel = 1 0.12 91 -4 4 
+4900113:addchannel = 1 0.12 91 -5 5 
+4900113:addchannel = 1 0.4 0 53 -53 
+
+#JetMatching:merge = on 
+#JetMatching:setMad = on 
+#JetMatching:scheme = 1 
+#JetMatching:jetAlgorithm = 2 
+#JetMatching:exclusive = 2 
+#JetMatching:nJetMax = 2 
+#JetMatching:qCut = 100 
+#JetMatching:nQmatch = 5 
+#JetMatching:clFact = 1.0 
+
+
+! main89ckkwl.cmnd
+! Specify merging parameters for CKKW-L, UMEPS, UNLOPS.
+Merging:TMS = 100 
+Merging:Process = 'pp>gvgv~' 
+Merging:nJetMax = 2 
+#TimeShower:pTmaxMatch = 1 
+#SpaceShower:pTmaxMatch = 1 
+
+Merging:mayRemoveDecayProducts = on  ! key point
+Merging:doKTMerging = on
+Merging:nQuarksMerge = 5
+Merging:Dparameter = 0.4
+
+
+! Set renormalisation / factorisation scales of the 2->2 process
+#Merging:muFac = 91.188 
+#Merging:muRen = 91.188 
+#Merging:muFacInME = 91.188 
+#Merging:muRenInME = 91.188 
+
+! Be more forgiving with momentum mismatches.
+#Check:epTolErr = 2e-2
+
+! Subruns for CKKW-L merging.
+LHEFInputs:nSubruns = 1
+Main:subrun = 0
+#Merging:doPTLundMerging = on 
+
+Beams:frameType = 4 
+Beams:LHEF = /youwei_home/SVJ_ATLAS/t-channel_ckkwl-v3/t_0/Events/run_01/unweighted_events.lhe

@@ -1,0 +1,38 @@
+import model DMsimp_tchannel 
+define gv = gv11 gv12 gv21 gv22 
+define gv~ = gv11~ gv12~ gv21~ gv22~ 
+define j = g u c d b s t u~ c~ d~ b~ s~ t~ 
+generate p p > gv gv~ @0 
+add process p p > gv gv~ j @1
+add process p p > gv gv~ j j @2
+output /youwei_home/SVJ_ATLAS/t-channel_ckkwl-v3/t_0
+
+launch /youwei_home/SVJ_ATLAS/t-channel_ckkwl-v3/t_0
+
+shower=OFF 
+detector=OFF 
+analysis=OFF 
+
+set run_card nevents 10000
+set run_card ebeam1 6500.0
+set run_card ebeam2 6500.0
+set run_card pdlabel lhapdf
+set iseed 111
+set msd11 1500
+set msd12 1500
+set msd21 1500
+set msd22 1500
+#set event_norm sum 
+set lhaid 260000 
+set lhe_version 2.0 
+set cut_decays F 
+
+# Required for CKKW-L jet matching 
+set ickkw 0 
+set xqcut 0.0
+set maxjetflavor 5 
+set alpsfact 1 
+set drjj 0.0 
+set ktdurham 100 
+set dparameter 0.4 
+done
