@@ -79,15 +79,38 @@ ssh <yourname>@lxplusXXX.cern.ch
 
 ## 2.Semi-Visible Jets Simulation
 1. R525 CPU server:  
+    -- | MadGraph5 | PYTHIA | DELPHES | HepMC | LHAPDF | FastJet
+    -- | :-------: | :----: | :-----: | :---: | :----: | :-----:
+    Version | 2.7.3 | 8.245 | 3.4.2 | 
+    
     t
-    t-channel (CKKW-L) | X-section (MG)/Nevent| X-section (Pythia) | Total/Accepted Nevent | Remark.  
-    ------------------ | :--------------------: | :----------------: | :-------------------: | :----:  
-    t-channel_ckkwl-v1 | 62.99 +- 0.1111 pb 10000 | 6.391e-08 | 10000/9998 |
-    hepmc-2 |    | 6.392e-08 | 10000/9999 |
-    t-channel_ckkwl-v2 |
-    t-channel_ckkwl-v3 |
-    t-channel_ckkwl-v4 |
-    t-channel_ckkwl-v5 |
+    
+    t-channel (CKKW-L) | X-section (MG)/Nevent| X-section (Pythia) | Total/Accepted Nevent | Remark
+    ------------------ | :--------------------: | :----------------: | :-------------------: | :----:
+    t-ch_ckkwl-v1      | 62.99 +- 0.1111 pb/10000 | 6.391e-08 mb | 10000/9998 | xqcut 30.0
+    hepmc-2 |    | 6.392e-08 mb | 10000/9999 |
+    t-ch_ckkwl-v2      | 63.09 +- 0.08374 pb/30000 |    |    | Increase Nevent, decrease sigma
+    t-ch_ckkwl-v3      | 63.04 +- 0.1112 pb/10000 | 6.398e-08 mb | 10000/9998 | xqcut 0.0/doPTLundMerging = on
+    hepmc-2 |    | 6.400e-08 mb | 10000/9999 | doKTMerging = on
+    hepmc-3 |    | 6.315e-08 mb | 10000/9841 | doKTMerging = on/close: ...
+    hepmc-4 |    | 6.296e-08 mb | 10000/9820 | doKTMerging = on
+    t-ch_ckkwl-v4      | 53.52 +- 0.1007 pb/10000 | 5.398e-08 mb | 10000/9965 | xqcut 200.0
+    t-ch_ckkwl-v5      | 42.33 +- 0.08993 pb/10000 |    |    | xqcut 0.0/ktdurham 300
+    
+    
+    
+2. LXPLUS:
+    -- | MadGraph5 | PYTHIA | DELPHES | HepMC | LHAPDF | FastJet
+    -- | :-------: | :----: | :-----: | :---: | :----: | :-----:
+    Version | 2.7.3 | 8.244 | 3.4.2 | 
+    
+    
+    t-channel (CKKW-L) | X-section (MG)/Nevent| X-section (Pythia) | Total/Accepted Nevent | Remark
+    ------------------ | :--------------------: | :----------------: | :-------------------: | :----:
+    t-ch_ckkwl-iSeed1
+    
+    
+    
     
     
 
