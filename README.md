@@ -80,9 +80,17 @@ ssh <yourname>@lxplusXXX.cern.ch
 ## 2.Semi-Visible Jets Simulation
 1. R525 CPU server:  
     t
-                       | X-section (MG) & Nevent| X-section (Pythia) & Nevent | Total Nevent | Accepted Nevent | Remark.  
-    ------------------ | :--------------------: | :-------------------------: | :----------: | :-------------: | :----:  
-    t-channel_ckkwl-v1 | 
+    t-channel (CKKW-L) | X-section (MG)/Nevent| X-section (Pythia) | Total/Accepted Nevent | Remark.  
+    ------------------ | :--------------------: | :----------------: | :-------------------: | :----:  
+    t-channel_ckkwl-v1 | 62.99 +- 0.1111 pb 10000 | 6.391e-08 | 10000/9998 |
+    hepmc-2 |    | 6.392e-08 | 10000/9999 |
+    t-channel_ckkwl-v2 |
+    t-channel_ckkwl-v3 |
+    t-channel_ckkwl-v4 |
+    t-channel_ckkwl-v5 |
+    
+    
+
     
     
     
