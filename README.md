@@ -78,3 +78,12 @@ ssh <yourname>@lxplusXXX.cern.ch
 ```
 
 ## 2.Semi-Visible Jets Simulation
+1. R525 CPU server:  
+    t
+                       | X-section (MG) & Nevent| X-section (Pythia) & Nevent | Total Nevent | Accepted Nevent | Remark.  
+    ------------------ | :--------------------: | :-------------------------: | :----------: | :-------------: | :----:  
+    t-channel_ckkwl-v1 | 
+    
+    
+    
+    
