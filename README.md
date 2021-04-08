@@ -85,9 +85,9 @@ ssh <yourname>@lxplusXXX.cern.ch
     Version | 2.7.3 | 8.245 | 3.4.2 | 
     
 * JobOption:
--- | MadGraph5 | PYTHIA | DELPHES | HepMC | LHAPDF | FastJet
--- | :-------: | :----: | :-----: | :---: | :----: | :-----:
-Version | 2.7.3 | 8.244 | 3.4.2 | 
+    -- | MadGraph5 | PYTHIA | DELPHES | HepMC | LHAPDF | FastJet
+    -- | :-------: | :----: | :-----: | :---: | :----: | :-----:
+    Version | 2.7.3 | 8.244 | 3.4.2 | 
 
 
 
@@ -109,6 +109,7 @@ t-ch_ckkwl-v5      | 42.33 +- 0.08993 pb/10000 |    |    | xqcut 0.0/ktdurham 30
 
 
 2. For JO:
+
 t-channel (CKKW-L) | X-section (MG)/Nevent| X-section (Pythia) | Total/Accepted Nevent | Remark
 ------------------ | :--------------------: | :----------------: | :-------------------: | :----:
 t-ch_ckkwl-iSeed1
@@ -131,6 +132,24 @@ s-ch_ckkwl-v1-1|0.5557+-0.001356 pb |==, ==, ==, ktdurham 100, auto_ptj_mjj=Fals
 -svj_ckkwl-1   |         ==         |1.000e-04+-5.689e-06 mb/291 |doKTMerging=on, Process=pp>xdxd~
 s-ch_ckkwl-v1-2|0.5557+-0.001356 pb |==, ==, ==, ktdurham 100, dokt=True; But .lhe do NOT find dokt|
 -svj_ckkwl-1   | ??? | ??? | ???
+s-ch_ckkwl-v2  |   |   |   
+--- | --- | --- | ---
+s-ch_ckkwl-v3  |0.9354+-0.002447 pb |==, ==, ==, ktdurham 20|
+-svj_ckkwl-1   |         ==         |1.000e-04+-7.515e-06 mb/171 |doKTMerging=on, Process=pp>xdxd~
+-svj_ckkwl-2   |         ==         |9.307e-10 mb/7343           |
+-svj_ckkwl-3   |         ==         |9.233e-10 mb/9863           |
+
+<table>
+    <tr>
+        <td>abc</td>
+        <td>123</td>
+    <tr>
+    <tr>
+        <td colspan="2">xyz</td>
+    <tr>
+<table>
+
+
 
 
 #### Conclusion:
