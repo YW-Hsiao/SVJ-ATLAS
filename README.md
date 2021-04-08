@@ -173,7 +173,7 @@ t-ch_ckkwl-iSeed1
     <tr>
         <th rowspan="3">s-ch_ckkwl-v2</th>
         <td>svj_ckkwl-1</td>
-        <td rowspan="3">nevents 10000, ECM=13 TeV,<br>xqcut 0.0, ktdurham 20</td>
+        <td rowspan="3">nevents 10000, ECM=13 TeV,<br>xqcut 0.0, <font color="red">ktdurham 20</font></td>
         <td rowspan="3">0.9354+-0.002447 pb</td>
         <td>doKTMerging=on, Process=pp>xdxd~</td>
         <td>1.000e-04+-7.515e-06 mb/171</td>
