@@ -121,30 +121,12 @@ t-ch_ckkwl-iSeed1
 * == means it is the same above.
 * -- means there is no do it.
 
-s-ch. (CKKW-L) |   X-section (MG)   | MG Setting/X-section (Pythia)/Accepted | Pythia Setting
--------------- | :----------------: | :------------------------------------: | :------------:
-s-ch_ckkwl-v0  |0.6776+-0.001049 pb |nevents 20000, ECM=14 TeV, xqcut 0.0, ktdurham 100|
-s-ch_ckkwl-v1  |0.5557+-0.001356 pb |nevents 10000, ECM=13 TeV, xqcut 0.0, ktdurham 100|
--svj_ckkwl-1   |         ==         |1.000e-04+-5.689e-06 mb/291 |doKTMerging=on, Process=pp>xdxd~
--DP8           |         ==         |5.263e-10 mb/9471           |==, ==, via DP8 with the same .cmnd
--svj_ckkwl-2   |         ==         |1.000e-04+-5.710e-06 mb/289 |==, ==, nSubruns=1, subrun=0
-s-ch_ckkwl-v1-1|0.5557+-0.001356 pb |==, ==, ==, ktdurham 100, auto_ptj_mjj=False|
--svj_ckkwl-1   |         ==         |1.000e-04+-5.689e-06 mb/291 |doKTMerging=on, Process=pp>xdxd~
-s-ch_ckkwl-v1-2|0.5557+-0.001356 pb |==, ==, ==, ktdurham 100, dokt=True; But .lhe do NOT find dokt|
--svj_ckkwl-1   | ??? | ??? | ???
-s-ch_ckkwl-v2  |   |   |   
---- | --- | --- | ---
-s-ch_ckkwl-v3  |0.9354+-0.002447 pb |==, ==, ==, ktdurham 20|
--svj_ckkwl-1   |         ==         |1.000e-04+-7.515e-06 mb/171 |doKTMerging=on, Process=pp>xdxd~
--svj_ckkwl-2   |         ==         |9.307e-10 mb/7343           |
--svj_ckkwl-3   |         ==         |9.233e-10 mb/9863           |
-
 <table>
     <tr>
         <th colspan="2">s-ch. (CKKW-L)</th>
-        <th>MG setting</th>
+        <th>MG Setting</th>
         <th>X-section (MG)</th>
-        <th>Pythia setting</th>
+        <th>Pythia Setting</th>
         <th>X-section (Pythia)/Accepted</th>
     </tr>
     <tr>
