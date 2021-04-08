@@ -111,10 +111,23 @@ ssh <yourname>@lxplusXXX.cern.ch
     
     
     
-    
-    
 
-    
-    
-    
-    
+
+
+
+
+3. s-channel with CKKW-L:
+
+s-ch. (CKKW-L) |  X-section (MG)   | MG Setting/X-section (Pythia)/Accepted | Pythia Setting
+-------------- | :---------------: | :------------------------------------: | :-------:
+s-ch_ckkwl-v0  |0.6776+-0.001049 pb|nevents 20000, ECM=14 TeV, xqcut 0.0, ktdurham 100|
+s-ch_ckkwl-v1  |0.5557+-0.001356 pb|nevents 10000, ECM=13 TeV, xqcut 0.0, ktdurham 100|doKTMerging=on
+svj_ckkwl-1    |        ==         |1.000e-04+-5.689e-06 mb/291  |nevents 10000, ECM=13 TeV, xqcut 0.0, ktdurham 100, doKTMerging=on
+DP8            |        ==         |5.263e-10 mb/9471            |==, ==, ==, ==, ==
+svj_ckkwl-2    |        ==         |1.000e-04+-5.710e-06 mb/289  |==, ==, ==, ==, ==, nSubruns = 1, subrun = 0
+
+s-ch_ckkwl-v1-1|
+
+
+
+
