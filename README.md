@@ -149,9 +149,9 @@ s-ch_ckkwl-v3  |0.9354+-0.002447 pb |==, ==, ==, ktdurham 20|
     </tr>
     <tr>
         <th colspan="2">s-ch_ckkwl-v0</th>
-        <td></td>
         <td>nevents 20000, ECM=14 TeV,<br>xqcut 0.0, ktdurham 100</td>
         <td>0.6776+-0.001049 pb</td>
+        <td>NA</td>
         <td>NA</td>
     </tr>
     <tr>
@@ -181,9 +181,30 @@ s-ch_ckkwl-v3  |0.9354+-0.002447 pb |==, ==, ==, ktdurham 20|
         <td>1.000e-04+-5.689e-06 mb/291</td>
     </tr>
     <tr>
-        <td></td>
-        <td></td>
-        <td></td>
+        <th>s-ch_ckkwl-v1-2</th>
+        <td>svj_ckkwl-1</td>
+        <td>nevents 10000, ECM=13 TeV,<br>xqcut 0.0, ktdurham 100, dokt=True;<br>But .lhe do NOT find dokt</td>
+        <td>0.5557+-0.001356 pb</td>
+        <td>???</td>
+        <td>???</td>
+    </tr>
+    <tr>
+        <th rowspan="3">s-ch_ckkwl-v2</th>
+        <td>svj_ckkwl-1</td>
+        <td rowspan="3">nevents 10000, ECM=13 TeV,<br>xqcut 0.0, ktdurham 20</td>
+        <td rowspan="3">0.9354+-0.002447 pb</td>
+        <td>doKTMerging=on, Process=pp>xdxd~</td>
+        <td>1.000e-04+-7.515e-06 mb/171</td>
+    </tr>
+    <tr>
+        <td>svj_ckkwl-2</td>
+        <td>???</td>
+        <td>9.307e-10 mb/7343</td>
+    </tr>
+    <tr>
+        <td>svj_ckkwl-3</td>
+        <td>???</td>
+        <td>9.233e-10 mb/9863</td>
     </tr>
 </table>
 
