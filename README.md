@@ -78,47 +78,47 @@ ssh <yourname>@lxplusXXX.cern.ch
 ```
 
 ## 2.Semi-Visible Jets Simulation
-1. R525 CPU server:  
+### 2-1. Version
+* R525 CPU server:
     -- | MadGraph5 | PYTHIA | DELPHES | HepMC | LHAPDF | FastJet
     -- | :-------: | :----: | :-----: | :---: | :----: | :-----:
     Version | 2.7.3 | 8.245 | 3.4.2 | 
     
-    t
-    
-    t-channel (CKKW-L) | X-section (MG)/Nevent| X-section (Pythia) | Total/Accepted Nevent | Remark
-    ------------------ | :--------------------: | :----------------: | :-------------------: | :----:
-    t-ch_ckkwl-v1      | 62.99 +- 0.1111 pb/10000 | 6.391e-08 mb | 10000/9998 | xqcut 30.0
-    hepmc-2 |    | 6.392e-08 mb | 10000/9999 |
-    t-ch_ckkwl-v2      | 63.09 +- 0.08374 pb/30000 |    |    | Increase Nevent, decrease sigma
-    t-ch_ckkwl-v3      | 63.04 +- 0.1112 pb/10000 | 6.398e-08 mb | 10000/9998 | xqcut 0.0/doPTLundMerging = on
-    hepmc-2 |    | 6.400e-08 mb | 10000/9999 | doKTMerging = on
-    hepmc-3 |    | 6.315e-08 mb | 10000/9841 | doKTMerging = on/close: ...
-    hepmc-4 |    | 6.296e-08 mb | 10000/9820 | doKTMerging = on
-    t-ch_ckkwl-v4      | 53.52 +- 0.1007 pb/10000 | 5.398e-08 mb | 10000/9965 | xqcut 200.0
-    t-ch_ckkwl-v5      | 42.33 +- 0.08993 pb/10000 |    |    | xqcut 0.0/ktdurham 300
-    
-    
-    
-2. LXPLUS:
-    -- | MadGraph5 | PYTHIA | DELPHES | HepMC | LHAPDF | FastJet
-    -- | :-------: | :----: | :-----: | :---: | :----: | :-----:
-    Version | 2.7.3 | 8.244 | 3.4.2 | 
-    
-    
-    t-channel (CKKW-L) | X-section (MG)/Nevent| X-section (Pythia) | Total/Accepted Nevent | Remark
-    ------------------ | :--------------------: | :----------------: | :-------------------: | :----:
-    t-ch_ckkwl-iSeed1
-    
-    
-    
+* JobOption:
+-- | MadGraph5 | PYTHIA | DELPHES | HepMC | LHAPDF | FastJet
+-- | :-------: | :----: | :-----: | :---: | :----: | :-----:
+Version | 2.7.3 | 8.244 | 3.4.2 | 
+
+
+
+### 2-2. t-channel with CKKW-L
+1. For R525 CPU server:
+
+t-channel (CKKW-L) | X-section (MG)/Nevent| X-section (Pythia) | Total/Accepted Nevent | Remark
+------------------ | :--------------------: | :----------------: | :-------------------: | :----:
+t-ch_ckkwl-v1      | 62.99 +- 0.1111 pb/10000 | 6.391e-08 mb | 10000/9998 | xqcut 30.0
+hepmc-2 |    | 6.392e-08 mb | 10000/9999 |
+t-ch_ckkwl-v2      | 63.09 +- 0.08374 pb/30000 |    |    | Increase Nevent, decrease sigma
+t-ch_ckkwl-v3      | 63.04 +- 0.1112 pb/10000 | 6.398e-08 mb | 10000/9998 | xqcut 0.0/doPTLundMerging = on
+hepmc-2 |    | 6.400e-08 mb | 10000/9999 | doKTMerging = on
+hepmc-3 |    | 6.315e-08 mb | 10000/9841 | doKTMerging = on/close: ...
+hepmc-4 |    | 6.296e-08 mb | 10000/9820 | doKTMerging = on
+t-ch_ckkwl-v4      | 53.52 +- 0.1007 pb/10000 | 5.398e-08 mb | 10000/9965 | xqcut 200.0
+t-ch_ckkwl-v5      | 42.33 +- 0.08993 pb/10000 |    |    | xqcut 0.0/ktdurham 300
+
+
+
+2. For JO:
+t-channel (CKKW-L) | X-section (MG)/Nevent| X-section (Pythia) | Total/Accepted Nevent | Remark
+------------------ | :--------------------: | :----------------: | :-------------------: | :----:
+t-ch_ckkwl-iSeed1
 
 
 
 
-
-3. s-channel with CKKW-L:
-    * == means it is the same above.
-    * -- means there is no do it.
+### 2-3. s-channel with CKKW-L
+* == means it is the same above.
+* -- means there is no do it.
 
 s-ch. (CKKW-L) |   X-section (MG)   | MG Setting/X-section (Pythia)/Accepted | Pythia Setting
 -------------- | :----------------: | :------------------------------------: | :------------:
@@ -133,9 +133,18 @@ s-ch_ckkwl-v1-2|0.5557+-0.001356 pb |==, ==, ==, ktdurham 100, dokt=True; But .l
 -svj_ckkwl-1   | ??? | ??? | ???
 
 
+#### Conclusion:
+1. s-ch_ckkwl-v0: Use previous setting which is s-channel with MLM jet matching.
+2. s-ch_ckkwl-v1: main89 and DelphesPythia8 have different results.
+    +LHEFInputs:nSubruns = 1 and Main:subrun = 0, the X-section has a little bit different.
+    v1-1: +auto_ptj_mjj = False, I guess we need to use Merging:doPTLundMerging = on.
+    v1-2: I do NOT find dokt setting in .lhe file.
+3. 
 
 
-Figure out:
+
+
+#### Figure out:
 * doKTMerging:
 * TMS:
 * mayRemoveDecayProducts:
