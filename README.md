@@ -141,13 +141,54 @@ s-ch_ckkwl-v3  |0.9354+-0.002447 pb |==, ==, ==, ktdurham 20|
 
 <table>
     <tr>
-        <td>abc</td>
-        <td>123</td>
+        <th colspan="2">s-ch. (CKKW-L)</th>
+        <th>MG setting</th>
+        <th>X-section (MG)</th>
+        <th>Pythia setting</th>
+        <th>X-section (Pythia)/Accepted</th>
+    </tr>
     <tr>
+        <th colspan="2">s-ch_ckkwl-v0</th>
+        <td></td>
+        <td>nevents 20000, ECM=14 TeV,<br>xqcut 0.0, ktdurham 100</td>
+        <td>0.6776+-0.001049 pb</td>
+        <td>NA</td>
+    </tr>
     <tr>
-        <td colspan="2">xyz</td>
+        <th rowspan="3">s-ch_ckkwl-v1</th>
+        <td>svj_ckkwl-1</td>
+        <td rowspan="3">nevents 10000, ECM=13 TeV,<br>xqcut 0.0, ktdurham 100</td>
+        <td rowspan="3">0.5557+-0.001356 pb</td>
+        <td>doKTMerging=on, Process=pp>xdxd~</td>
+        <td>1.000e-04+-5.689e-06 mb/291</td>
+    </tr>
     <tr>
-<table>
+        <td>DP8</td>
+        <td>doKTMerging=on, Process=pp>xdxd~</td>
+        <td>5.263e-10 mb/9471</td>
+    </tr>
+    <tr>
+        <td>svj_ckkwl-2</td>
+        <td>doKTMerging=on, Process=pp>xdxd~,<br>nSubruns=1, subrun=0</td>
+        <td>1.000e-04+-5.710e-06 mb/289</td>
+    </tr>
+    <tr>
+        <th>s-ch_ckkwl-v1-1</th>
+        <td>svj_ckkwl-1</td>
+        <td>nevents 10000, ECM=13 TeV,<br>xqcut 0.0, ktdurham 100, auto_ptj_mjj=False</td>
+        <td>0.5557+-0.001356 pb</td>
+        <td>doKTMerging=on, Process=pp>xdxd~</td>
+        <td>1.000e-04+-5.689e-06 mb/291</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
+
+<td></td>
 
 
 
